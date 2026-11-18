@@ -16,10 +16,10 @@ import matplotlib.patches as mpatches
 from sklearn.ensemble import RandomForestClassifier
 
 #Loading of the training datasets for gene expression values and mutations and y_train
-de_genes_train = pd.read_csv("datasets/multi_omic_IF/de_genes_norm_train.csv", index_col=0)
-snp_train= pd.read_csv("dataset/multi_omic_IF/snp_select_norm_train.csv", index_col=0)
+de_genes_train = pd.read_csv("datasets/multi_omic/de_genes_norm_train.csv", index_col=0)
+snp_train= pd.read_csv("dataset/multi_omic/snp_select_norm_train.csv", index_col=0)
 
-y_train= pd.read_csv("datasets/multi_omic_IF/y_train.csv", index_col=0)
+y_train= pd.read_csv("datasets/multi_omic/y_train.csv", index_col=0)
 
 # Creating the AnnData files for both genes and SNPs,
 # which are required to generate the MuData requested by MOFA

@@ -18,16 +18,16 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, matthews_corrcoef, confusion_matrix
 
 #Loading the test datasets of the gene expression values and mutations,as well as y_train e y_test
-de_genes_test = pd.read_csv("datasets/multi_omic_IF/de_genes_norm_test.csv", index_col=0) 
-snp_test= pd.read_csv("datasets/multi_omic_IF/snp_select_norm_test.csv", index_col=0)
+de_genes_test = pd.read_csv("datasets/multi_omic/de_genes_norm_test.csv", index_col=0) 
+snp_test= pd.read_csv("datasets/multi_omic/snp_select_norm_test.csv", index_col=0)
 
-y_train= y_train= pd.read_csv("datasets/multi_omic_IF/y_train.csv", index_col=0)
-y_test= pd.read_csv("datasets/multi_omic_IF/y_test.csv", index_col=0)
+y_train= y_train= pd.read_csv("datasets/multi_omic/y_train.csv", index_col=0)
+y_test= pd.read_csv("datasets/multi_omic/y_test.csv", index_col=0)
 
 n_factors= 50
 
 # Loading the model previously trained and saved
-model = mofa.mofa_model(f"models/multi_omic_IF//model_final_{n_factors}_last.hdf5")
+model = mofa.mofa_model(f"models/multi_omic_IF/model_final_{n_factors}_last.hdf5")
 # Visualizzo i campioni del modello
 model.get_samples()
 
