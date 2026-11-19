@@ -15,8 +15,8 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_sc
 from sklearn.preprocessing import StandardScaler
 
 #Loading training and test datasets with the selected mutations
-SNPs_train= pd.read_csv("SNPs_train_selected.csv", index_col=0)
-SNPs_test= pd.read_csv("SNPs_test_selected.csv", index_col=0)
+SNPs_train= pd.read_csv("datasets/single_omic/SNPs_train_selected.csv", index_col=0)
+SNPs_test= pd.read_csv("datasets/single_omic/SNPs_test_selected.csv", index_col=0)
 
 #Extracting the column from the initial datasets that contains the labels to define the target and
 #convert them into numbers (0 for AD, 1 for CN)
