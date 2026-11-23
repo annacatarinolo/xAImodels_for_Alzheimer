@@ -9,8 +9,8 @@ The **models** folder contains models for single-omic, intermediate fusion (IF) 
 
 1) The **single-omic** folder contains:
 - the python scripts for training and test
+- the requirements txt file
 - the .csv file containing the dictionary that associates each mutation with the corresponding chromosome
-- the requirements txt file.
   
 2) The **multi_omic_IF** folder contains:
 - the python scripts for training and test
